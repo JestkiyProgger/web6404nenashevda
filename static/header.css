@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Шрифты */
+
+.neucha-regular {
+    font-family: "Neucha", cursive;
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* Шапка */
+
+/* Стилизация иконки */
+.header__img {
+    height: 48px;
+    width: 48px;
+}
+
+.link_img {
+    text-decoration: none; /* Убрать подсветку снизу */
+    vertical-align: middle; /* Выравнивание по вертикали */
+}
+
+/* Кнопки в правом верхнем углу */
+
+.Auth_buttons {
+    float: right; /* Помещаем контейнер с кнопками вправо */
+    margin: 12px 12px 0px 0px; /* Отступ сверху и справа */
+}
+
+.Auth_buttons button {
+    margin-left: 1px; /* Отступ между кнопками */
+    padding: 5px 10px; /* Внутренние отступы кнопок */
+    color: black; /* Цвет текста кнопок */
+    border: none; /* Убираем границу у кнопок */
+    border-radius: 5px; /* Закругляем углы */
+}
+
+.Auth_buttons button:hover {
+    background-color: white; /* Цвет фона при наведении */
+}
+
+/* Основная работа */
+
+header{
+    background: linear-gradient(to right, blue, pink); /* Цвет задника */
+    color: #cdcdcd; /* Слов серый??? */
+    padding: 15px; /* Пространство между его содержимым и его границей */
+}
+
+.Top_menu {
+    display: inline-block; /* Чтобы все не шло построчно */
+}
+
+.Top_menu li {
+    list-style-type: none; /* Убрать точки между элементами */
+    display: inline-block; /* Чтобы все не шло построчно */
+    margin-right: 10px; /* Отступы справа */
+    vertical-align: middle; /* Выравнивание по вертикали */
+}
+
+.Top_menu li:last-child {
+    margin-right: 0; /* Убрать отступ справа у последнего элемента */
+}
+
+.Top_menu li a {
+    padding: 5px 10px; /* Внутренние отступы для ссылок */
+    text-decoration: none; /* Убрать подсветку снизу */
+}
+
+.Top_menu li a:visited {
+    color: inherit; /* Наследовать цвет текста от родительского элемента */
+}
+
+.Top_menu li a:hover {
+    background-color: white; /* Цвет фона ссылок */
+    color: black; /* Цвет текста ссылок */
+    border-radius: 5px; /* Закругленные углы */
+}
+
+/* Тело */
+
+h1 {
+    margin: 8px;
+    color: rgb(146, 69, 123);
+    text-align: center;
+}
+
+table {
+    width: 300px; /* Ширина таблицы */
+    border: 1px solid green; /* Рамка вокруг таблицы */
+    margin: auto; /* Выравниваем таблицу по центру окна  */
+}
+
+td {
+    text-align: center; /* Выравниваем текст по центру ячейки */
+}
