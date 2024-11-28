@@ -97,7 +97,7 @@ function getOperationFn(initialValue, operatorFn) {
  * console.log(generator()); // 7
  * console.log(generator()); // 9
  */
-function sequence(start, step) {
+function sequence(start = 0, step = 1) {
     let current = start;
     return function () {
         const value = current;
@@ -121,13 +121,28 @@ function sequence(start, step) {
  * deepEqual({arr: [22, 33], text: 'text'}, {arr: [22, 3], text: 'text2'}) // false
  */
 function deepEqual(firstObject, secondObject) {
+    // Сравнение примитивных значений и null/undefined
     if (firstObject === secondObject) return true;
+    
+    // Проверка на NaN
+    if (Number.isNaN(firstObject) && Number.isNaN(secondObject)) return true;
 
+    // Проверка на типы и null
     if (typeof firstObject !== 'object' || firstObject === null ||
         typeof secondObject !== 'object' || secondObject === null) {
         return false;
     }
 
+    // Проверка массивов
+    if (Array.isArray(firstObject) && Array.isArray(secondObject)) {
+        if (firstObject.length !== secondObject.length) return false;
+        for (let i = 0; i < firstObject.length; i++) {
+            if (!deepEqual(firstObject[i], secondObject[i])) return false;
+        }
+        return true;
+    }
+
+    // Проверка объектов
     const keysFirst = Object.keys(firstObject);
     const keysSecond = Object.keys(secondObject);
 
@@ -141,6 +156,8 @@ function deepEqual(firstObject, secondObject) {
 
     return true;
 }
+
+
 
 module.exports = {
     isInteger,
