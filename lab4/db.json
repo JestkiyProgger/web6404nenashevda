@@ -1,0 +1,52 @@
+{
+  "users": [
+    {
+      "id": "8894",
+      "name": "Данила",
+      "email": "danil.nenashev1337@gmail.com",
+      "password": "WEBtest"
+    },
+    {
+      "id": "fd8d",
+      "name": "Илья",
+      "email": "iliya.pleshakovv@mail.ru",
+      "password": "WEBtest2"
+    },
+    {
+      "id": "1e9e",
+      "name": "Ваня",
+      "email": "jetbrainsdanila@gmail.com",
+      "password": "WEBtest3"
+    },
+    {
+      "id": "544f",
+      "name": "Витя",
+      "email": "holo@gmail.com",
+      "password": "WEBtest4"
+    },
+    {
+      "id": "3f57",
+      "name": "Николай",
+      "email": "nikola@gmail.com",
+      "password": "WEBtest5"
+    },
+    {
+      "id": "2529",
+      "name": "Даниил",
+      "email": "1@1.com",
+      "password": "123456"
+    },
+    {
+      "id": "57d8",
+      "name": "Давид",
+      "email": "bocka@mail.ru",
+      "password": "123456"
+    },
+    {
+      "id": "1dfb",
+      "name": "Леша",
+      "email": "leha.chetkiu.pozik@mail.ru",
+      "password": "1234567"
+    }
+  ]
+}

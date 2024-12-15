@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Шрифты */
+
+.neucha-regular {
+    font-family: "Neucha", cursive;
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* Шапка */
+
+/* Стилизация иконки */
+.header__img {
+    height: 48px;
+    width: 48px;
+}
+
+.link_img {
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+/* Кнопки в правом верхнем углу */
+
+.Auth_buttons {
+    float: right;
+    margin: 12px 12px 0px 0px;
+}
+
+.Auth_buttons button {
+    margin-left: 1px;
+    padding: 5px 10px;
+    color: black;
+    border: none;
+    border-radius: 5px;
+}
+
+.Auth_buttons button:hover {
+    background-color: white;
+}
+
+/* Основная работа */
+
+header{
+    background: linear-gradient(to right, blue, pink);
+    color: #cdcdcd;
+    padding: 15px;
+}
+
+.Top_menu {
+    display: inline-block;
+}
+
+.Top_menu li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.Top_menu li:last-child {
+    margin-right: 0;
+}
+
+.Top_menu li a {
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+.Top_menu li a:visited {
+    color: inherit;
+}
+
+.Top_menu li a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
