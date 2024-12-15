@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="author" content="Danila Nenashev" />
+    <link rel="stylesheet" href="../static/header.css">
+    <link rel="stylesheet" href="../static/registration.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
+
+    <title>Страница регистрации</title>
+</head>
+<body>
+    
+    <header class="neucha-regular">
+
+        <a class="link_img" href="home.html">
+            <img class="header__img" src="../static/icon_base.png" alt="icon_base">
+        </a>
+
+        <div class="Top_menu">
+            <ul>
+                    <li><a href="home.html">Домашняя страница</a></li>
+                    <li><a href="photos.html">Фотографии</a></li>
+            </ul>
+        </div>
+
+        <div class="Auth_buttons">
+            <button class="neucha-regular" onclick="location.href='login.html'">Войти</button>
+            <button class="neucha-regular" onclick="location.href='registration.html'">Зарегистрироваться</button>
+        </div>
+
+    </header>
+
+    <div class="form-container">
+        <h1 class="neucha-regular">Здесь регистрация аккаунта для входа на сайт.</h1>
+        <form id="registerForm">
+            <label for="name">Имя</label>
+            <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Введите ваш email" required>
+
+            <label for="password">Пароль</label>
+            <input type="password" id="password" name="password" placeholder="Введите ваш пароль" required>
+
+            <label for="confirm-password">Подтвердите пароль</label>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="Введите ваш пароль" required>
+
+            <button type="submit">Зарегистрироваться</button>
+        </form>
+
+        <div id="registerMessage"></div>
+    </div>
+
+    <script src="../static/formHandler.js"></script>
+</body>
+</html>

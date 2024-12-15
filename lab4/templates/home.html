@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Danila Nenashev" />
+    <link rel="stylesheet" href="../static/header.css">
+    <link rel="stylesheet" href="../static/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
+    <title>Домашняя страница</title>
+</head>
+<body>
+    
+    <header class="neucha-regular">
+        <a class="link_img" href="home.html">
+            <img class="header__img" src="../static/icon_base.png" alt="icon_base">
+        </a>
+
+        <div class="Top_menu">
+            <ul>
+                <li><a href="home.html">Домашняя страница</a></li>
+                <li><a href="photos.html">Фотографии</a></li>
+            </ul>
+        </div>
+
+        <div class="Auth_buttons">
+            <button class="neucha-regular" onclick="location.href='login.html'">Войти</button>
+            <button class="neucha-regular" onclick="location.href='registration.html'">Зарегистрироваться</button>
+        </div>
+    </header>
+
+    <main class="home-content">
+        <section class="intro">
+            <h1 class="neucha-regular">Добрый день пользователь сайта, этот web-сайт создан для просмотра фото.</h1>
+            <p class="neucha-regular">Зарегистрированные пользователи:</p>
+        </section>
+
+        <section class="users">
+            <table id="usersTable">
+                <thead>
+                    <tr>
+                        <th>Имя</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="../static/users.js"></script>
+
+</body>
+</html>
